@@ -10,7 +10,11 @@ h6 {
 }
 
 img {
-    display: block;
+    margin-bottom: 25px;
+    height: 125px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    object-fit: cover;
 }
 
 ul,
@@ -29,6 +33,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100%;
 }
 
 .container {
@@ -37,33 +42,25 @@ body {
     width: 100%;
     max-width: 980px;
     display: flex;
-    flex-direction: row;
-    padding: 25px 50px;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     text-transform: uppercase;
+    max-width: 945px;
+    padding: 0 15px;
 }
 
 .block-personal {
     border-right: 1px solid #e1f1ff;
-    padding: 25px 50px;
-    
+    padding: 0 15px;
 }
+
 .block-small-team {
     border-right: 1px solid #e1f1ff;
-    padding: 25px 50px;
-    
+    padding: 0 15px;
 }
 
 .block-enterprise {
-    padding: 25px 50px;
-}
-
-
-
-.img {
-    margin-bottom: 25px;
-    max-width: 100%;
+    padding: 0 15px;
 }
 
 .header {
@@ -86,9 +83,6 @@ body {
     border-top: 1px solid #e1f1ff;
 }
 
-.pricing-item: {
-    border-bottom: 1px solid #e1f1ff;
-}
 
 .pricing-text {
     color: #016ff9;
@@ -101,10 +95,13 @@ body {
     border: 1px solid #9dd1ff;
     border-radius: 10px;
     color: #348efe;
-    display: inline-block;
-    padding: 15px 35px;
+    display: inline-flex;
     text-decoration: none;
-    margin: 25px 0;
+    margin: 25px 40px;
+    justify-content: center;
+    align-items: center;
+    width: 171px;
+    height: 40px;
 }
 
 .pricing-botton:hover,
@@ -113,14 +110,6 @@ body {
     transition: all 200ms ease-in-out;
 }
 
-.pricing-botton.is-featured {
-    background-color: #48aaff;
-    color: #e1f1ff;
+html {
+    height: 100%;
 }
-
-.pricing-botton.is-featured:hover,
-.pricing-botton.is-featured:focus {
-    background-color: #269aff;
-    color: #e1f1ff;
-}
-
